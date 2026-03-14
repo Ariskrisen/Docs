@@ -1,4 +1,3 @@
-import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import Translate from '@docusaurus/Translate';
@@ -6,10 +5,10 @@ import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 type FeatureItem = {
-  title: ReactNode;
+  title: JSX.Element;
   emoji: string;
-  description: ReactNode;
-  badge: ReactNode;
+  description: JSX.Element;
+  badge: JSX.Element;
   link: string;
 };
 
@@ -18,28 +17,19 @@ const FeatureList: FeatureItem[] = [
     title: <Translate id="feature.dialogmenus.title">DialogMenus</Translate>,
     emoji: '🖼️',
     description: (
-      <Translate id="feature.dialogmenus.desc">Мощный плагин для создания меню с использованием нативного Paper Dialogs API. Обеспечивает плавные анимации, отсутствие лагающих слотов инвентаря и идеальное отображение на любых экранах.</Translate>
+      <Translate id="feature.dialogmenus.desc">Мощный плагин для создания меню с использованием нативного Paper Dialogs API. Обеспечивает плавные анимации и идеальное отображение.</Translate>
     ),
     badge: <Translate id="feature.dialogmenus.badge">Paper Dialogs API</Translate>,
     link: '/docs/DialogMenus/intro',
   },
   {
     title: <Translate id="feature.easyscript.title">EasyScript</Translate>,
-    emoji: '🚀',
+    emoji: '📜',
     description: (
-      <Translate id="feature.easyscript.desc">Высокопроизводительный скриптовый движок. Пишите логику на современном JavaScript (GraalVM) с полным доступом к Paper API и мгновенной перезагрузкой файлов без рестарта сервера.</Translate>
+      <Translate id="feature.easyscript.desc">Легковесный движок скриптов с поддержкой JavaScript (GraalVM). Позволяет расширять логику сервера без компиляции JAR.</Translate>
     ),
     badge: <Translate id="feature.easyscript.badge">GraalVM JS</Translate>,
     link: '/docs/EasyScript/intro',
-  },
-  {
-    title: <Translate id="feature.knowledge.title">Единая База Знаний</Translate>,
-    emoji: '📚',
-    description: (
-      <Translate id="feature.knowledge.desc">Вся необходимая информация в одном месте. Практические примеры настроек, руководства разработчика и подробный разбор конфигураций.</Translate>
-    ),
-    badge: <Translate id="feature.knowledge.badge">Документация</Translate>,
-    link: '/docs/DialogMenus/intro',
   },
   {
     title: <Translate id="feature.worldsystem.title">WorldSystem</Translate>,
@@ -54,10 +44,10 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({ title, emoji, description, badge, link }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
-      <Link to={link} style={{ textDecoration: 'none', color: 'inherit' }}>
-        <div className={clsx('glass-panel', styles.featureCard)}>
-          <div className={styles.featureIcon}>{emoji}</div>
+    <div className="col col--4">
+      <Link className={styles.featureCard} to={link}>
+        <div className={styles.featureIcon}>{emoji}</div>
+        <div className="text--center padding-horiz--md">
           <Heading as="h3" className={styles.featureTitle}>{title}</Heading>
           <p className={styles.featureDescription}>{description}</p>
           <span className={styles.featureBadge}>{badge}</span>
@@ -67,16 +57,18 @@ function Feature({ title, emoji, description, badge, link }: FeatureItem) {
   );
 }
 
-export default function HomepageFeatures(): ReactNode {
+export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
-        <Heading as="h2" className={styles.sectionTitle}>
-          <Translate id="feature.section.title">Наши Плагины</Translate>
-        </Heading>
-        <p className={styles.sectionSubtitle}>
-          <Translate id="feature.section.subtitle">Инструменты для создания уникального серверного опыта</Translate>
-        </p>
+        <div className={styles.sectionHeader}>
+          <Heading as="h2" className={styles.sectionTitle}>
+            <Translate id="homepage.features.title">Наши Плагины</Translate>
+          </Heading>
+          <p className={styles.sectionSubtitle}>
+            <Translate id="homepage.features.subtitle">Инструменты нового поколения для администраторов и разработчиков Minecraft серверов.</Translate>
+          </p>
+        </div>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

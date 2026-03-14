@@ -361,5 +361,32 @@
   },
   "feature.knowledge.desc": {
     "message": "All the necessary information in one place. Practical configuration examples, developer guides, and detailed analyses of configuration options."
+  },
+  "homepage.tagline": {
+    "message": "⚡ Open-Source Minecraft Plugins"
+  },
+  "homepage.btn.worldsystem": {
+    "message": "WorldSystem Docs 🌍"
+  },
+  "feature.dialogmenus.badge": {
+    "message": "Paper Dialogs API"
+  },
+  "feature.easyscript.badge": {
+    "message": "GraalVM JS"
+  },
+  "feature.worldsystem.title": {
+    "message": "WorldSystem"
+  },
+  "feature.worldsystem.desc": {
+    "message": "Personal worlds for every player. A fork of the popular plugin with improved GUI, biome templates, and full Paper 1.21 support."
+  },
+  "feature.worldsystem.badge": {
+    "message": "World Management"
+  },
+  "homepage.features.title": {
+    "message": "Our Plugins"
+  },
+  "homepage.features.subtitle": {
+    "message": "Next-generation tools for Minecraft server administrators and developers."
   }
 }
