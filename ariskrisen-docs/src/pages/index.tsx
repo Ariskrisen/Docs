@@ -50,6 +50,9 @@ function HomepageHeader() {
           </Link>
         </div>
       </div>
+      <div className={styles.scrollIndicator}>
+        <span></span>
+      </div>
     </header>
   );
 }
