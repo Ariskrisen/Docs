@@ -10,10 +10,10 @@ sidebar_position: 1
 
 ## 📖 Содержание
 
-1.  **[Конфигурация (YAML)](https://github.com/Ariskrisen/DialogMenus/wiki/Configurations)** — Подробное описание структуры `.yml` файлов.
-2.  **[Действия (Actions)](https://github.com/Ariskrisen/DialogMenus/wiki/Actions)** — Всё о командах, ссылках и переходах между меню.
-3.  **[Команды и Права](https://github.com/Ariskrisen/DialogMenus/wiki/Commands)** — Управление плагином в игре.
-4.  **[Примеры меню](https://github.com/Ariskrisen/DialogMenus/wiki/Examples)** — Готовые шаблоны для ваших нужд.
+1.  **[Конфигурация (YAML)](./configurations)** — Подробное описание структуры `.yml` файлов.
+2.  **[Действия (Actions)](./actions)** — Всё о командах, ссылках и переходах между меню.
+3.  **[Команды и Права](./commands)** — Управление плагином в игре.
+4.  **[Примеры меню](./examples)** — Готовые шаблоны для ваших нужд.
 
 ---
 
