@@ -8,12 +8,7 @@ Welcome to the official documentation for the **DialogMenus** plugin!
 
 Here you will find all the necessary information for creating modern and functional in-game menus using the Paper Dialogs API.
 
-## 📖 Table of Contents
-
-1.  **[Configuration (YAML)](./configurations.md)** — Detailed description of `.yml` file structures.
-2.  **[Actions](./actions.md)** — Everything about commands, links, and transitions between menus.
-3.  **[Commands & Permissions](./commands.md)** — Managing the plugin in-game.
-4.  **[Menu Examples](./examples.md)** — Ready-made templates for your needs.
+![Example dialog menu in Minecraft](/img/dialogmenus-preview.png)
 
 ---
 
