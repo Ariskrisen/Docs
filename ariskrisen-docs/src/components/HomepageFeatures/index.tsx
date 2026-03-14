@@ -41,6 +41,15 @@ const FeatureList: FeatureItem[] = [
     badge: <Translate id="feature.knowledge.badge">Документация</Translate>,
     link: '/docs/DialogMenus/intro',
   },
+  {
+    title: <Translate id="feature.worldsystem.title">WorldSystem</Translate>,
+    emoji: '🌍',
+    description: (
+      <Translate id="feature.worldsystem.desc">Личные миры для каждого игрока. Форк популярного плагина с улучшенным GUI, шаблонами биомов и полной поддержкой Paper 1.21.</Translate>
+    ),
+    badge: <Translate id="feature.worldsystem.badge">World Management</Translate>,
+    link: '/docs/WorldSystem/intro',
+  },
 ];
 
 function Feature({ title, emoji, description, badge, link }: FeatureItem) {

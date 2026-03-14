@@ -43,6 +43,11 @@ function HomepageHeader() {
             to="/docs/EasyScript/intro">
             <Translate id="homepage.btn.easyscript">Документация EasyScript 📜</Translate>
           </Link>
+          <Link
+            className={clsx('button button--secondary button--lg', styles.pluginCard)}
+            to="/docs/WorldSystem/intro">
+            <Translate id="homepage.btn.worldsystem">Документация WorldSystem 🌍</Translate>
+          </Link>
         </div>
       </div>
     </header>

@@ -73,6 +73,12 @@ const config: Config = {
           label: 'EasyScript',
         },
         {
+          type: 'docSidebar',
+          sidebarId: 'worldSystemSidebar',
+          position: 'left',
+          label: 'WorldSystem',
+        },
+        {
           type: 'localeDropdown',
           position: 'right',
         },
@@ -96,6 +102,10 @@ const config: Config = {
             {
               label: 'EasyScript (Scripting Engine)',
               to: '/docs/EasyScript/intro',
+            },
+            {
+              label: 'WorldSystem (World Management)',
+              to: '/docs/WorldSystem/intro',
             },
           ],
         },
