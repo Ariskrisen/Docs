@@ -34,7 +34,7 @@ function HomepageHeader() {
         </p>
         <div className={styles.buttons}>
           <Link
-            className={clsx('button button--primary button--lg', styles.pluginCard)}
+            className={clsx('button button--secondary button--lg', styles.pluginCard)}
             to="/docs/DialogMenus/intro">
             <Translate id="homepage.btn.dialogmenus">Документация DialogMenus ⚙️</Translate>
           </Link>
