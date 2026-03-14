@@ -1,0 +1,78 @@
+{
+  "homepage.tagline": {
+    "message": "⚡ Плагины с открытым исходным кодом",
+    "description": "Tagline on the homepage"
+  },
+  "homepage.title": {
+    "message": "Плагины Ariskrisen",
+    "description": "Title on the homepage"
+  },
+  "homepage.subtitle": {
+    "message": "Современная и мощная экосистема плагинов для вашего Minecraft сервера.",
+    "description": "Subtitle on the homepage"
+  },
+  "homepage.btn.dialogmenus": {
+    "message": "Документация DialogMenus ⚙️",
+    "description": "Button to DialogMenus docs"
+  },
+  "homepage.btn.easyscript": {
+    "message": "Документация EasyScript 📜",
+    "description": "Button to EasyScript docs"
+  },
+  "homepage.btn.worldsystem": {
+    "message": "Документация WorldSystem 🌍",
+    "description": "Button to WorldSystem docs"
+  },
+  "homepage.meta.title": {
+    "message": "Главная | Ariskrisen Docs",
+    "description": "Meta title for homepage"
+  },
+  "homepage.meta.description": {
+    "message": "Единый портал документации для плагинов Ariskrisen (DialogMenus, EasyScript)",
+    "description": "Meta description for homepage"
+  },
+  "feature.dialogmenus.title": {
+    "message": "DialogMenus",
+    "description": "Title for DialogMenus feature"
+  },
+  "feature.dialogmenus.desc": {
+    "message": "Мощный плагин для создания меню с использованием нативного Paper Dialogs API. Обеспечивает плавные анимации и идеальное отображение.",
+    "description": "Description for DialogMenus feature"
+  },
+  "feature.easyscript.title": {
+    "message": "EasyScript",
+    "description": "Title for EasyScript feature"
+  },
+  "feature.easyscript.desc": {
+    "message": "Легковесный движок скриптов с поддержкой JavaScript (GraalVM). Позволяет расширять логику сервера без компиляции JAR.",
+    "description": "Description for EasyScript feature"
+  },
+  "feature.worldsystem.title": {
+    "message": "WorldSystem",
+    "description": "Title for WorldSystem feature"
+  },
+  "feature.worldsystem.desc": {
+    "message": "Личные миры для каждого игрока. Форк популярного плагина с улучшенным GUI, шаблонами биомов и полной поддержкой Paper 1.21.",
+    "description": "Description for WorldSystem feature"
+  },
+  "feature.dialogmenus.badge": {
+    "message": "Paper Dialogs API",
+    "description": "Badge for DialogMenus"
+  },
+  "feature.easyscript.badge": {
+    "message": "GraalVM JS",
+    "description": "Badge for EasyScript"
+  },
+  "feature.worldsystem.badge": {
+    "message": "Управление мирами",
+    "description": "Badge for WorldSystem"
+  },
+  "homepage.features.title": {
+    "message": "Наши Плагины",
+    "description": "Title for features section"
+  },
+  "homepage.features.subtitle": {
+    "message": "Инструменты нового поколения для администраторов и разработчиков Minecraft серверов.",
+    "description": "Subtitle for features section"
+  }
+}

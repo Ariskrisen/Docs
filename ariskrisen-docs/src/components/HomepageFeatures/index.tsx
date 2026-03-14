@@ -47,7 +47,7 @@ function Feature({ title, emoji, description, badge, link }: FeatureItem) {
     <div className="col col--4">
       <Link className={styles.featureCard} to={link}>
         <div className={styles.featureIcon}>{emoji}</div>
-        <div className="text--center padding-horiz--md">
+        <div className={clsx("text--center padding-horiz--md", styles.featureContent)}>
           <Heading as="h3" className={styles.featureTitle}>{title}</Heading>
           <p className={styles.featureDescription}>{description}</p>
           <span className={styles.featureBadge}>{badge}</span>
