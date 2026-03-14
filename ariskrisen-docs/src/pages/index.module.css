@@ -26,14 +26,14 @@
   position: absolute;
   border-radius: 50%;
   filter: blur(80px);
-  opacity: 0.5;
+  opacity: 0.45;
   animation: float 12s ease-in-out infinite alternate;
 }
 
 .heroBackground::before {
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.35), transparent 70%);
+  background: radial-gradient(circle, rgba(220, 38, 38, 0.3), transparent 70%);
   top: -10%;
   left: -5%;
 }
@@ -41,18 +41,18 @@
 .heroBackground::after {
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(236, 72, 153, 0.25), transparent 70%);
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.2), transparent 70%);
   bottom: -20%;
   right: -10%;
   animation-delay: -6s;
 }
 
 [data-theme='dark'] .heroBackground::before {
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.4), transparent 70%);
+  background: radial-gradient(circle, rgba(220, 38, 38, 0.35), transparent 70%);
 }
 
 [data-theme='dark'] .heroBackground::after {
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.35), transparent 70%);
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.25), transparent 70%);
 }
 
 @keyframes float {
@@ -172,7 +172,7 @@
   line-height: 1.05;
   margin-bottom: 0.5rem;
   letter-spacing: -0.03em;
-  background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
+  background: linear-gradient(135deg, #dc2626, #ef4444, #f97316);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -238,40 +238,6 @@
   letter-spacing: 0.01em;
 }
 
-/* ─── Stats row ─── */
-.statsRow {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  margin-top: 4rem;
-  opacity: 0;
-  animation: fade-in-up 0.8s ease-out 0.6s forwards;
-}
-
-.stat {
-  text-align: center;
-}
-
-.statValue {
-  font-family: 'Outfit', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 800;
-  background: var(--docs-gradient-hero);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  line-height: 1;
-}
-
-.statLabel {
-  font-size: 0.85rem;
-  color: var(--ifm-font-color-secondary);
-  margin-top: 0.4rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
 /* ─── Animations ─── */
 @keyframes fade-in-up {
   0% {
@@ -295,14 +261,6 @@
     padding: 4rem 1.5rem 3rem;
   }
 
-  .statsRow {
-    gap: 2rem;
-  }
-
-  .statValue {
-    font-size: 2rem;
-  }
-
   .heroBackground::before,
   .heroBackground::after {
     width: 300px;
@@ -313,10 +271,5 @@
 @media screen and (max-width: 500px) {
   .heroTitle {
     font-size: 2.2rem;
-  }
-
-  .statsRow {
-    flex-direction: column;
-    gap: 1.5rem;
   }
 }

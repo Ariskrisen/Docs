@@ -1,19 +1,18 @@
 /**
- * Premium Ariskrisen Docs — Global Styles
- * Using modern design tokens, glassmorphism, smooth transitions.
+ * Premium Ariskrisen Docs — Global Styles (Red Theme)
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap');
 
 /* ─── Light Theme Tokens ─── */
 :root {
-  --ifm-color-primary: #6366f1;
-  --ifm-color-primary-dark: #4f46e5;
-  --ifm-color-primary-darker: #4338ca;
-  --ifm-color-primary-darkest: #3730a3;
-  --ifm-color-primary-light: #818cf8;
-  --ifm-color-primary-lighter: #a5b4fc;
-  --ifm-color-primary-lightest: #c7d2fe;
+  --ifm-color-primary: #dc2626;
+  --ifm-color-primary-dark: #b91c1c;
+  --ifm-color-primary-darker: #991b1b;
+  --ifm-color-primary-darkest: #7f1d1d;
+  --ifm-color-primary-light: #ef4444;
+  --ifm-color-primary-lighter: #f87171;
+  --ifm-color-primary-lightest: #fca5a5;
 
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
@@ -22,14 +21,13 @@
   --ifm-line-height-base: 1.65;
   --ifm-spacing-horizontal: 1.25rem;
   --ifm-navbar-height: 4rem;
-  --ifm-navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 
-  --docusaurus-highlighted-code-line-bg: rgba(99, 102, 241, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(220, 38, 38, 0.1);
 
-  --docs-color-accent: #8b5cf6;
-  --docs-color-accent-alt: #ec4899;
-  --docs-gradient-hero: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
-  --docs-gradient-card: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(139, 92, 246, 0.08));
+  --docs-color-accent: #dc2626;
+  --docs-color-accent-alt: #f97316;
+  --docs-gradient-hero: linear-gradient(135deg, #dc2626 0%, #ef4444 50%, #f97316 100%);
+  --docs-gradient-card: linear-gradient(135deg, rgba(220, 38, 38, 0.06), rgba(249, 115, 22, 0.06));
   --docs-shadow-card: 0 4px 24px rgba(0, 0, 0, 0.06);
   --docs-shadow-card-hover: 0 12px 40px rgba(0, 0, 0, 0.12);
   --docs-border-radius: 20px;
@@ -37,20 +35,20 @@
 
 /* ─── Dark Theme Tokens ─── */
 [data-theme='dark'] {
-  --ifm-color-primary: #818cf8;
-  --ifm-color-primary-dark: #6366f1;
-  --ifm-color-primary-darker: #4f46e5;
-  --ifm-color-primary-darkest: #4338ca;
-  --ifm-color-primary-light: #a5b4fc;
-  --ifm-color-primary-lighter: #c7d2fe;
-  --ifm-color-primary-lightest: #e0e7ff;
+  --ifm-color-primary: #ef4444;
+  --ifm-color-primary-dark: #dc2626;
+  --ifm-color-primary-darker: #b91c1c;
+  --ifm-color-primary-darkest: #991b1b;
+  --ifm-color-primary-light: #f87171;
+  --ifm-color-primary-lighter: #fca5a5;
+  --ifm-color-primary-lightest: #fee2e2;
 
-  --ifm-background-color: #0b0f1a;
-  --ifm-background-surface-color: #111827;
+  --ifm-background-color: #0f0a0a;
+  --ifm-background-surface-color: #1a1111;
 
-  --docusaurus-highlighted-code-line-bg: rgba(129, 140, 248, 0.15);
+  --docusaurus-highlighted-code-line-bg: rgba(239, 68, 68, 0.15);
 
-  --docs-gradient-card: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(139, 92, 246, 0.1));
+  --docs-gradient-card: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(249, 115, 22, 0.08));
   --docs-shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
   --docs-shadow-card-hover: 0 12px 40px rgba(0, 0, 0, 0.6);
 }
@@ -80,7 +78,7 @@ h6 {
 }
 
 [data-theme='dark'] .navbar {
-  background: rgba(11, 15, 26, 0.85) !important;
+  background: rgba(15, 10, 10, 0.85) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
@@ -103,7 +101,7 @@ h6 {
 .button--primary {
   background: var(--docs-gradient-hero);
   border: none;
-  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.35);
+  box-shadow: 0 4px 20px rgba(220, 38, 38, 0.3);
   transition: transform 0.25s cubic-bezier(.4, 0, .2, 1), box-shadow 0.25s cubic-bezier(.4, 0, .2, 1);
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -111,35 +109,35 @@ h6 {
 
 .button--primary:hover {
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.45);
+  box-shadow: 0 8px 30px rgba(220, 38, 38, 0.4);
   background: var(--docs-gradient-hero);
 }
 
 .button--secondary {
-  background: rgba(99, 102, 241, 0.08);
+  background: rgba(220, 38, 38, 0.06);
   backdrop-filter: blur(12px);
-  border: 1.5px solid rgba(99, 102, 241, 0.25);
+  border: 1.5px solid rgba(220, 38, 38, 0.2);
   color: var(--ifm-color-primary);
   font-weight: 600;
   transition: all 0.25s cubic-bezier(.4, 0, .2, 1);
 }
 
 .button--secondary:hover {
-  background: rgba(99, 102, 241, 0.15);
+  background: rgba(220, 38, 38, 0.12);
   border-color: var(--ifm-color-primary);
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 8px 30px rgba(220, 38, 38, 0.15);
   color: var(--ifm-color-primary);
 }
 
 [data-theme='dark'] .button--secondary {
-  background: rgba(129, 140, 248, 0.08);
-  border-color: rgba(129, 140, 248, 0.2);
+  background: rgba(239, 68, 68, 0.08);
+  border-color: rgba(239, 68, 68, 0.2);
   color: var(--ifm-color-primary-light);
 }
 
 [data-theme='dark'] .button--secondary:hover {
-  background: rgba(129, 140, 248, 0.15);
+  background: rgba(239, 68, 68, 0.15);
   border-color: var(--ifm-color-primary-light);
 }
 
@@ -154,7 +152,7 @@ h6 {
 }
 
 [data-theme='dark'] .glass-panel {
-  background: rgba(17, 24, 39, 0.6);
+  background: rgba(26, 17, 17, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: var(--docs-shadow-card);
 }
@@ -178,7 +176,7 @@ h6 {
 
 /* ─── Footer ─── */
 .footer--dark {
-  background: #0b0f1a;
+  background: #0f0a0a;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
@@ -210,10 +208,10 @@ article h1 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(99, 102, 241, 0.3);
+  background: rgba(220, 38, 38, 0.25);
   border-radius: 100px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(99, 102, 241, 0.5);
+  background: rgba(220, 38, 38, 0.45);
 }
