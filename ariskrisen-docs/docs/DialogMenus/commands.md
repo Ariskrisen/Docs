@@ -10,8 +10,8 @@ sidebar_position: 4
 
 | Команда | Алиасы | Описание | Право (Permission) |
 | :--- | :--- | :--- | :--- |
-| `/dim reload` | `/dm reload`, `/dialogs reload` | Перезагружает все меню из папки `menus/`. | `dialogmenus.reload` |
-| `/dim open <игрок> <меню>` | `/dm open`, `/dialogs open` | Открывает указанный диалог для игрока. | `dialogmenus.open` |
+| `/dialogs reload` | `/dim reload`| Перезагружает все меню из папки `menus/`. | `dialogmenus.reload` |
+| `/dialogs open <игрок> <меню>` | `/dim open` | Открывает указанный диалог для игрока. | `dialogmenus.open` |
 
 ### Примеры использования:
 - `/dim reload` — обновить конфиги после редактирования.
