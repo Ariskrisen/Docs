@@ -268,13 +268,12 @@
 
 .scrollIndicator span {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   border-bottom: 3px solid var(--ifm-color-primary);
   border-right: 3px solid var(--ifm-color-primary);
   transform: rotate(45deg);
-  /* Proper chevron pointing down */
-  margin-top: -10px;
+  margin-top: -8px;
 }
 
 @keyframes bounce {
