@@ -1,6 +1,5 @@
+/* ─── Features Section ─── */
 .features {
-  display: flex;
-  align-items: center;
   padding: 6rem 0;
   width: 100%;
   position: relative;
@@ -8,31 +7,101 @@
   background: var(--ifm-background-surface-color);
 }
 
+.sectionTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.sectionSubtitle {
+  text-align: center;
+  color: var(--ifm-font-color-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ─── Feature Card ─── */
 .featureCard {
-  padding: 2.5rem 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2.5rem 2rem;
+  transition: transform 0.35s cubic-bezier(.4, 0, .2, 1), box-shadow 0.35s cubic-bezier(.4, 0, .2, 1);
   height: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+.featureCard::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent, rgba(99, 102, 241, 0.04));
+  opacity: 0;
+  transition: opacity 0.35s ease;
 }
 
 .featureCard:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
+  box-shadow: var(--docs-shadow-card-hover);
 }
 
-.featureEmoji {
-  font-size: 4.5rem;
-  margin-bottom: 1.5rem;
-  display: inline-block;
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+.featureCard:hover::before {
+  opacity: 1;
 }
 
+/* ─── Icon ─── */
+.featureIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: var(--docs-gradient-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.featureCard:hover .featureIcon {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+/* ─── Title ─── */
 .featureTitle {
-  font-weight: 800;
+  font-weight: 700;
   font-family: 'Outfit', sans-serif;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
 }
 
+/* ─── Description ─── */
 .featureDescription {
-  color: var(--ifm-font-color-base);
-  font-size: 1.05rem;
-  line-height: 1.6;
+  color: var(--ifm-font-color-secondary);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* ─── Badge ─── */
+.featureBadge {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.3rem 0.85rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--docs-gradient-card);
+  color: var(--ifm-color-primary);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+[data-theme='dark'] .featureBadge {
+  color: var(--ifm-color-primary-light);
+  border-color: rgba(129, 140, 248, 0.2);
 }

@@ -13,8 +13,23 @@ function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <header className={styles.heroBanner}>
+      {/* Animated gradient orbs */}
       <div className={styles.heroBackground}></div>
+
+      {/* Floating particles */}
+      <div className={styles.particles}>
+        <span className={styles.particle}></span>
+        <span className={styles.particle}></span>
+        <span className={styles.particle}></span>
+        <span className={styles.particle}></span>
+        <span className={styles.particle}></span>
+        <span className={styles.particle}></span>
+      </div>
+
       <div className="container">
+        <p className={styles.heroTagline}>
+          <Translate id="homepage.tagline">⚡ Open-Source Minecraft Plugins</Translate>
+        </p>
         <Heading as="h1" className={styles.heroTitle}>
           <Translate id="homepage.title">Ariskrisen Plugins</Translate>
         </Heading>
@@ -33,13 +48,34 @@ function HomepageHeader() {
             <Translate id="homepage.btn.easyscript">Документация EasyScript 📜</Translate>
           </Link>
         </div>
+
+        {/* Stats */}
+        <div className={styles.statsRow}>
+          <div className={styles.stat}>
+            <div className={styles.statValue}>2</div>
+            <div className={styles.statLabel}>
+              <Translate id="homepage.stats.plugins">Плагина</Translate>
+            </div>
+          </div>
+          <div className={styles.stat}>
+            <div className={styles.statValue}>1.21+</div>
+            <div className={styles.statLabel}>
+              <Translate id="homepage.stats.version">Paper MC</Translate>
+            </div>
+          </div>
+          <div className={styles.stat}>
+            <div className={styles.statValue}>MIT</div>
+            <div className={styles.statLabel}>
+              <Translate id="homepage.stats.license">Лицензия</Translate>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
   );
 }
 
 export default function Home(): ReactNode {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={translate({ id: 'homepage.meta.title', message: 'Главная | Ariskrisen Docs' })}
