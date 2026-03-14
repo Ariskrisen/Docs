@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Ariskrisen Docs",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Ariskrisen Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.DialogMenus": {
+    "message": "DialogMenus",
+    "description": "Navbar item with label DialogMenus"
+  },
+  "item.label.EasyScript": {
+    "message": "EasyScript",
+    "description": "Navbar item with label EasyScript"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

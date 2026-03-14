@@ -1,0 +1,26 @@
+{
+  "link.title.Plugins": {
+    "message": "Plugins",
+    "description": "The title of the footer links column with title=Plugins in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.item.label.DialogMenus (GUI Plugin)": {
+    "message": "DialogMenus (GUI Plugin)",
+    "description": "The label of footer link with label=DialogMenus (GUI Plugin) linking to /docs/DialogMenus/intro"
+  },
+  "link.item.label.EasyScript (Scripting Engine)": {
+    "message": "EasyScript (Scripting Engine)",
+    "description": "The label of footer link with label=EasyScript (Scripting Engine) linking to /docs/EasyScript/intro"
+  },
+  "link.item.label.Ariskrisen GitHub": {
+    "message": "Ariskrisen GitHub",
+    "description": "The label of footer link with label=Ariskrisen GitHub linking to https://github.com/Ariskrisen"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Ariskrisen. Built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}
