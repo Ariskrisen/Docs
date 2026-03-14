@@ -10,10 +10,10 @@ Here you will find all the necessary information for creating modern and functio
 
 ## 📖 Table of Contents
 
-1.  **[Configuration (YAML)](./configurations)** — Detailed description of `.yml` file structures.
-2.  **[Actions](./actions)** — Everything about commands, links, and transitions between menus.
-3.  **[Commands & Permissions](./commands)** — Managing the plugin in-game.
-4.  **[Menu Examples](./examples)** — Ready-made templates for your needs.
+1.  **[Configuration (YAML)](../configurations)** — Detailed description of `.yml` file structures.
+2.  **[Actions](../actions)** — Everything about commands, links, and transitions between menus.
+3.  **[Commands & Permissions](../commands)** — Managing the plugin in-game.
+4.  **[Menu Examples](../examples)** — Ready-made templates for your needs.
 
 ---
 
