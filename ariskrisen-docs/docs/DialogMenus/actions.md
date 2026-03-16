@@ -92,3 +92,18 @@ buttons:
 - `body` контенте.
 - `text` и `hover` кнопок.
 - `value` действий (например, в командах).
+
+### Условные плейсхолдеры (Conditional)
+Вы можете отображать разный текст в зависимости от значения плейсхолдера:
+
+```yaml
+buttons:
+  toggle_fire:
+    text: "<gray>Fire: <%easyscript_ws_fire_%?red:green>●</gray> <%easyscript_ws_fire_%?ON:OFF>"
+```
+
+**Синтаксис:** `<%плейсхолдер%?значение_если_истина:значение_если_ложь>`
+
+**Пример:**
+- Если `%easyscript_ws_fire_%` = `true` → покажет "red" и "ON"
+- Если `%easyscript_ws_fire_%` = `false` → покажет "green" и "OFF"

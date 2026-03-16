@@ -89,6 +89,28 @@ events.on(PlayerJoinEvent, (event) => {
 });
 ```
 
+## Пример: Создание кастомных плейсхолдеров
+
+```javascript
+// Регистрация плейсхолдера: %easyscript_deaths%
+papi.registerPlaceholder("deaths", (player, params) => {
+    if (!player.isOnline()) return "0";
+    
+    const p = player.getPlayer();
+    return p.getStatistic(org.bukkit.Statistic.DEATHS).toString();
+});
+
+// Вызов: %easyscript_deaths% (сработает как с _, так и без)
+```
+
+:::note
+Кастомные плейсхолдеры можно вызывать как с подчёркиванием в конце, так и без него:
+- `%easyscript_deaths%`
+- `%easyscript_deaths_%`
+
+Оба варианта работают одинаково.
+:::
+
 ## Горячая перезагрузка
 
 После изменения скрипта выполните:
