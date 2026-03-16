@@ -35,3 +35,21 @@ templates:
       - MEADOW: 10
       - FLOWER_FOREST: 5
 ```
+
+## 🎯 Спавн в определённом биоме
+
+Вы можете настроить, чтобы игрок заспавнился в определённом биоме при создании мира. Для этого добавьте параметр `spawn` в шаблон:
+
+```yaml
+templates:
+  5:
+    name: 'template_desert'
+    spawn: DESERT    # Игрок заспавнится в пустыне
+```
+
+### Доступные биомы:
+- DESERT, FOREST, TAIGA, PLAINS, SAVANNA, SNOWY_TAIGA, SNOWY_PLAINS, JUNGLE, OCEAN, RIVER, SWAMP, MANGROVE_SWAMP, BEACH, MOUNTAINS, BIRCH_FOREST, DARK_FOREST, FLOWER_FOREST, TAIGA, JUNGLE, BAMBOO_JUNGLE, BADLANDS, ERODED_BADLANDS, WOODED_BADLANDS, CRIMSON_FOREST, SOUL_SAND_VALLEY, WARPED_FOREST, BASALT_DELTAS, GIANT_TREE_TAIGA, SNOWY_BEACH, STONE_SHORE, MUSHROOM_FIELDS, ICE_SPIKES, CHERRY_GROVE, FROZEN_RIVER, SNOWY_SLOPES, FROZEN_PEAKS, JAGGED_PEAKS, и другие.
+
+:::note
+При использовании `spawn` игрок будет телепортирован в указанный биом при первом входе в мир. Если биом не найден в радиусе 1500 блоков, будет использован стандартный спавн мира.
+:::

@@ -18,6 +18,10 @@ Manage the WorldSystem plugin using the main command `/ws`.
 | `/ws addmember <player>` | Add a member to your world. | `ws.build` |
 | `/ws delmember <player>` | Remove a member from your world. | `ws.build` |
 | `/ws delete` | Completely delete your world. | `ws.delete` |
+| `/ws tnt [true/false]` | Enable/disable TNT damage on your world. | `ws.build` |
+| `/ws fire [true/false]` | Enable/disable fire damage on your world. | `ws.build` |
+| `/ws players` | Open members management menu for your world. | (everyone) |
+| `/ws sethome` | Set home location in your world. | `ws.sethome` |
 
 ## 🛠 Admin Commands
 
@@ -26,8 +30,6 @@ Manage the WorldSystem plugin using the main command `/ws`.
 | `/ws tp <world>` | Teleport to any player's world. | `ws.tp.other` |
 | `/ws get <player> <template>` | Create a world for a specific player. | `ws.get.admin` |
 | `/ws reset` | Completely reset the plugin database. | `ws.*` |
-| `/ws tnt` | Toggle TNT explosions globally. | `ws.*` |
-| `/ws fire` | Toggle fire spread globally. | `ws.*` |
 | `/ws togglebuild` | Toggle build mode. | `ws.*` |
 
 ---
