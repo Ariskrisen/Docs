@@ -22,5 +22,9 @@
   "item.label.WorldSystem": {
     "message": "WorldSystem",
     "description": "Navbar item with label WorldSystem"
+  },
+  "item.label.Artifacts": {
+    "message": "Artifacts",
+    "description": "Navbar item with label Artifacts"
   }
 }

@@ -40,6 +40,15 @@ const FeatureList: FeatureItem[] = [
     badge: <Translate id="feature.worldsystem.badge">World Management</Translate>,
     link: '/docs/WorldSystem/intro',
   },
+  {
+    title: <Translate id="feature.artifacts.title">Artifacts</Translate>,
+    emoji: '✨',
+    description: (
+      <Translate id="feature.artifacts.desc">Уникальные пассивные артефакты для игроков. Работают прямо из инвентаря, имеют множество визуальных эффектов и гибкую настройку.</Translate>
+    ),
+    badge: <Translate id="feature.artifacts.badge">Passive Items</Translate>,
+    link: '/docs/Artifacts/intro',
+  },
 ];
 
 function Feature({ title, emoji, description, badge, link }: FeatureItem) {

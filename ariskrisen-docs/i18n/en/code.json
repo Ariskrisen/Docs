@@ -388,5 +388,17 @@
   },
   "homepage.features.subtitle": {
     "message": "Next-generation tools for Minecraft server administrators and developers."
+  },
+  "homepage.btn.artifacts": {
+    "message": "Artifacts Docs ✨"
+  },
+  "feature.artifacts.title": {
+    "message": "Artifacts"
+  },
+  "feature.artifacts.desc": {
+    "message": "Unique passive artifacts for players. They work directly from the inventory, feature numerous visual effects, and offer flexible configuration."
+  },
+  "feature.artifacts.badge": {
+    "message": "Passive Items"
   }
 }

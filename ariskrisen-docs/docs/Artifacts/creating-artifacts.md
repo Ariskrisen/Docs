@@ -52,7 +52,7 @@ artifacts:
 |----------|-----|---------|
 | `material` | String | Материал предмета или `namespace:id` для ItemsAdder |
 | `name` | String | Название (поддерживает `§` цветовые коды) |
-| `lore` | List<String> | Описание (показывается в tooltip) |
+| `lore` | `List<String>` | Описание (показывается в tooltip) |
 | `enabled` | Boolean | Включен ли артефакт |
 | `custom-model-data` | Integer | ID текстуры (для JavaScript/textures MCP) |
 

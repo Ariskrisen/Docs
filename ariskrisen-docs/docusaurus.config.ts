@@ -79,6 +79,12 @@ const config: Config = {
           label: 'WorldSystem',
         },
         {
+          type: 'docSidebar',
+          sidebarId: 'artifactsSidebar',
+          position: 'left',
+          label: 'Artifacts',
+        },
+        {
           type: 'localeDropdown',
           position: 'right',
         },
@@ -106,6 +112,10 @@ const config: Config = {
             {
               label: 'WorldSystem (World Management)',
               to: '/docs/WorldSystem/intro',
+            },
+            {
+              label: 'Artifacts (Passive Items)',
+              to: '/docs/Artifacts/intro',
             },
           ],
         },

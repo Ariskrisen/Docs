@@ -48,6 +48,11 @@ function HomepageHeader() {
             to="/docs/WorldSystem/intro">
             <Translate id="homepage.btn.worldsystem">Документация WorldSystem 🌍</Translate>
           </Link>
+          <Link
+            className={clsx('button button--secondary button--lg', styles.pluginCard)}
+            to="/docs/Artifacts/intro">
+            <Translate id="homepage.btn.artifacts">Документация Artifacts ✨</Translate>
+          </Link>
         </div>
       </div>
       <div className={styles.scrollIndicator}>

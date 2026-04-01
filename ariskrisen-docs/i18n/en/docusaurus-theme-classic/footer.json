@@ -26,5 +26,9 @@
   "link.item.label.WorldSystem (World Management)": {
     "message": "WorldSystem (World Management)",
     "description": "The label of footer link with label=WorldSystem (World Management) linking to /docs/WorldSystem/intro"
+  },
+  "link.item.label.Artifacts (Passive Items)": {
+    "message": "Artifacts (Passive Items)",
+    "description": "The label of footer link with label=Artifacts (Passive Items) linking to /docs/Artifacts/intro"
   }
 }
