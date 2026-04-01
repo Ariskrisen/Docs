@@ -3,9 +3,9 @@ sidebar_position: 1
 ---
 
 # WorldSystem 🌍
-
-> [!IMPORTANT]
-> **This is a fork!** WorldSystem-Melm is a modified and enhanced version of the original WorldSystem plugin.
+:::warning Attention
+WorldSystem-Melm is a modified and improved version of the original WorldSystem plugin.
+:::
 
 **WorldSystem** is a powerful world management plugin where every player can have their own fully customizable world. It's the perfect solution for anarchy, survival, or creative servers where players need private space.
 
