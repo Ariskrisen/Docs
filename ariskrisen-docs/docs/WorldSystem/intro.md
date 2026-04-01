@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # WorldSystem 🌍
 
-:::warning Внимание
+:::warning Это Форк!
 WorldSystem-Melm является модифицированной и улучшенной версией оригинального плагина WorldSystem.
 :::
 
