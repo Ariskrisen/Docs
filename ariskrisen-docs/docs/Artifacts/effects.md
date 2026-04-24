@@ -224,6 +224,7 @@ passive-abilities:
   - type: DOUBLE_JUMP
     boost: 1.5          # Множитель скорости прыжка
     cooldown: 100       # Кулдаун в тиках
+```
 
 ### SHRINK | Уменьшение
 
