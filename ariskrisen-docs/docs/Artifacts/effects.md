@@ -208,6 +208,8 @@ passive-abilities:
 | `LOOT_BONUS` | Бонус лута | `chance` |
 | `WITHER_REDUCTION` | Защита от wither | `percent` |
 | `JUMP_BOOST` | Прыгучесть | `level` |
+| `SHRINK` | Уменьшение размера | `scale-multiplier`, `health-multiplier`, `speed-multiplier`, `damage-multiplier` |
+| `GROW` | Увеличение размера | `scale-multiplier`, `health-multiplier`, `speed-multiplier`, `damage-multiplier` |
 
 ### Примеры
 
@@ -222,4 +224,39 @@ passive-abilities:
   - type: DOUBLE_JUMP
     boost: 1.5          # Множитель скорости прыжка
     cooldown: 100       # Кулдаун в тиках
+
+### SHRINK | Уменьшение
+
+Уменьшает размер игрока, изменяя HP, скорость и урон.
+
+```yaml
+# Пример: Ртуть Гермеса
+passive-abilities:
+  - type: SHRINK
+    scale-multiplier: 0.5      # Размер x0.5
+    health-multiplier: 0.5      # HP x0.5 (10 сердец)
+    speed-multiplier: 1.25     # Скорость x1.25
+    damage-multiplier: 1.0       # Урон без изменения
+```
+
+| Параметр | Описание |
+|----------|-----------|
+| `scale-multiplier` | Множитель размера (0.5 = половина) |
+| `health-multiplier` | Множитель HP (0.5 = 10 HP) |
+| `speed-multiplier` | Множитель скорости (1.25 = +25%) |
+| `damage-multiplier` | Множитель урона |
+
+### GROW | Увеличение
+
+Увеличивает размер игрока, изменяя HP, скорость и урон.
+
+```yaml
+# Пример: Кровь Титана
+passive-abilities:
+  - type: GROW
+    scale-multiplier: 1.5      # Размер x1.5
+    health-multiplier: 1.5      # HP x1.5 (30 сердец)
+    speed-multiplier: 0.75     # Скорость x0.75
+    damage-multiplier: 1.5     # Урон x1.5
+```
 ```
